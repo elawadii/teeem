@@ -136,7 +136,7 @@
     width: 60%;
     transition: 0.3s;
   }
-  nav .icon span:nth-child(2):hover {
+  nav .icon .open {
     width: 100%;
   }
   nav span:nth-child(3){
@@ -166,7 +166,7 @@
     right: 0;
     top: -20px;
   }
-  header nav:hover ul {
+.open {
     display: block;
   }
   nav ul li{
@@ -196,16 +196,20 @@
     header .categories ul{
       display: none;
     }
-  }
-  .newMenu:hover + ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgb(0 0 0 / 100%);
-    z-index: 300;
+    .open {
+      display: block !important;
+    }
+
+    .newMenu + ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgb(0 0 0 / 100%);
+      z-index: 300;
+    }
   }
   /* end header */
   /* start footer  */
